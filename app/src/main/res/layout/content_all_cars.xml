@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AllCarsActivity"
+    tools:showIn="@layout/activity_all_cars"
+    android:background="@color/ligtht_grey">
+
+    <RelativeLayout
+        android:id="@+id/no_car_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/btn_add_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_medium"
+
+            android:text="Add Your Car"/>
+
+        <ImageView
+            android:id="@+id/img_nocar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/btn_add_car"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/new_mini"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Car Found Please Add Your Car"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_below="@+id/img_nocar"
+            android:gravity="center_horizontal"
+            />
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/user_car_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

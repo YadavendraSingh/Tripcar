@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:id="@+id/gphome" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_findride"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Find a ride" />
+
+        <item
+            android:id="@+id/nav_offerride"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Offer a ride" />
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/nav_verify"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Verify" />
+
+    </group>
+
+    <!--<group android:id="@+id/gpfride" android:checkableBehavior="single">
+
+
+
+    </group>
+
+    <group android:id="@+id/gporide" android:checkableBehavior="single">
+
+
+
+    </group>
+
+
+    <group android:id="@+id/gplogin" android:checkableBehavior="single">
+
+
+
+    </group>
+
+
+    <group android:id="@+id/gpsign" android:checkableBehavior="single">
+
+
+    </group>
+-->
+
+</menu>

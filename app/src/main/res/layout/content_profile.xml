@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_small"
+    android:paddingLeft="@dimen/margin_small"
+    android:paddingRight="@dimen/margin_small"
+    android:paddingTop="@dimen/margin_small"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tripcar.yadu.com.tripcar.ProfileActivity"
+    tools:showIn="@layout/activity_profile"
+    android:orientation="vertical"
+    android:background="@color/ligtht_grey"
+    android:weightSum="10">
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/profile_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"></com.facebook.login.widget.ProfilePictureView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Profile Name"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/tvprofile_completeness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Profile Completeness - "
+                android:textSize="@dimen/text_size_medium_small"
+                android:textStyle="italic"/>
+
+
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/chart1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btn_add_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/text_size_medium"
+
+            android:text="Add Your Car"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

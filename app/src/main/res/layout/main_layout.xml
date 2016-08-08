@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/cargirl"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="#9E9E9Eff"
+        android:orientation="vertical">
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:hint="Select start point"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="#FFFFFF" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:hint="Select end point"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:background="#FFFFFF" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:background="#66BB6Add"
+    android:textSize="25sp"
+    />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tripcar.yadu.com.tripcar.AddCarActivity"
+    tools:showIn="@layout/activity_add_car"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/ligtht_grey"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/car_line"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/tvcarbrandnmodel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:id="@+id/tvcolor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+<View
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="@color/grey"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"
+        android:orientation="vertical"
+        android:weightSum="7.5"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Make"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_medium_small"/>
+
+        <Spinner
+            android:id="@+id/spincarmake"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Model"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_medium_small"/>
+
+        <Spinner
+            android:id="@+id/spinmodel"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Comfort"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_medium_small"/>
+
+        <Spinner
+            android:id="@+id/spincomfort"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Number Of Seats"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_medium_small"/>
+
+        <Spinner
+            android:id="@+id/spinnoseats"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></Spinner>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Color"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_medium_small"/>
+
+        <Spinner
+            android:id="@+id/spincolor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:text="Car Type"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="@dimen/text_size_medium"/>
+
+        <Spinner
+            android:id="@+id/spintype"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"></Spinner>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <Button
+                android:id="@+id/btnaddcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Car"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@color/primary_color"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/text_size_medium"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
