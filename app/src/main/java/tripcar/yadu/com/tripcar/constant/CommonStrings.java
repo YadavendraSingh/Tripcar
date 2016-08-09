@@ -17,7 +17,7 @@ public class CommonStrings {
 
     public static String PROFILE_NAME = "Profile_Name";
 
-    public static String URL = "http://52.8.102.27:3000/";
+    public static String URL = "Enter your link here";
 
     public static String FB_LOGIN_BASE = "fb_login";
 
@@ -35,10 +35,9 @@ public class CommonStrings {
 
     public static String USER_ACCESS_TOCKEN = "User_Access_Tocken";
 
-    //public static String SMS_ORIGIN = "tripcar";
-    public static String SMS_ORIGIN = "dz-waysms";
-
-    public static String OTP_DELIMITER = "s";
+    public static String SMS_ORIGIN = "tripcar";
+    
+    public static String OTP_DELIMITER = ":";
 
     public static String PHONE_NUMBER_VERIFIED = "Phone_number_verified";
 
