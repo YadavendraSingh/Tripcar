@@ -37,7 +37,7 @@
     <string name="hello_user">Hello %1$s!</string>
     <string name="success">Success</string>
 
-    <string name="app_id">142451729460872</string>
+    <string name="app_id">Enter here your Project ID for Facebook</string>
     <string name="title_activity_splash_screen">SplashScreenActivity</string>
     <string name="title_activity_login_new">Login</string>
     <string name="title_activity_sms_verification">Sms Verificationy</string>
@@ -66,7 +66,7 @@
 
     <string name="is_registered_on_gcm">IS_REGISTERED_ON_GCM</string>
 
-    <string name="gcm_defaultSenderId">748814797492</string>
+    <string name="gcm_defaultSenderId">Enter here your Project Id for GCM</string>
 
     <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
     <string name="server_registered">From Demo Server: successfully added device!</string>
